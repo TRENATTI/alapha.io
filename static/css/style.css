@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css?family=Exo:400,700");
+
+* {
+  font-family: "Exo", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  overflow-x: hidden !important;
+}
+
+:root {
+  --primary-color: rgb(31, 131, 221);
+  --secondary-color: rgb(31, 131, 221);
+}
+
+::selection {
+  background: #1f85dd;
+  color: black;
+}
+::-moz-selection {
+  background: #1f85dd;
+  color: black;
+}
+
+img::selection {
+  background: #00000000;
+}
+img::-moz-selection {
+  background: #00000000;
+}
+
+header {
+  /* background-color: var(--secondary-color); */
+  background: rgb(31, 133, 221);
+  background: linear-gradient(
+    90deg,
+    rgba(31, 133, 221, 1) 0%,
+    rgba(51, 142, 221, 1) 52%,
+    rgba(59, 157, 242, 1) 100%
+  );
+  width: 100%;
+  height: 40px;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  /* white-space: nowrap; */
+}
+
+.moto {
+  text-decoration: none;
+  color: #f3f3f3;
+  text-overflow: uppercase;
+  font-weight: 700;
+  font-size: 1.8em;
+  text-transform: uppercase;
+}
+
+.navbar a {
+  color: #f3f3f3;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: 600;
+  padding-left: 30px;
+  transition: 0.2s ease-in;
+}
+
+.navbar a:hover {
+  color: rgb(216, 215, 215);
+}
+
+section {
+  padding: 50px 200px;
+}
+
+section h2 span {
+  color: var(--primary-color);
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background: url(../assets/background2024.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.logo {
+  width: 20rem;
+}
+
+.main h2 {
+  color: #f3f3f3;
+  font-size: 2em;
+  font-weight: 700;
+  text-align: center;
+}
+
+.main h3 {
+  color: #f3f3f3;
+  font-size: 1.5em;
+  font-weight: 600;
+  text-align: center;
+}
+
+.main h3 span {
+  color: var(--primary-color);
+}
+
+.main i {
+  color: #1f85dd;
+}
+
+.main-btn {
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #f3f3f3;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+  max-width: none;
+  min-height: 44px;
+  min-width: 10px;
+  outline: none;
+  overflow: hidden;
+  margin-top: 10px;
+  padding: 9px 20px 8px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  transition: 0.6s ease;
+}
+
+.main-btn:hover,
+.main-btn:focus {
+  opacity: 0.85;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  color: #f3f3f3;
+  font-size: 2.2em;
+  font-weight: 800;
+}
+
+.title span {
+  color: var(--primary-color);
+}
+
+.about {
+  background-color: #222;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.desc {
+  text-align: center;
+}
+
+.desc h3 {
+  color: #f3f3f3;
+}
+
+/* Blacklist Styles */
+.blacklist {
+  background-color: #5f5f5f89;
+  border-radius: 20px;
+  padding: 10px;
+  color: #f3f3f3;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.blacklist ul {
+  list-style: none;
+  margin: 10px;
+}
+
+.blacklist ul li {
+  padding: 3px;
+}
+
+@media (max-width: 763px) {
+  .blacklist h2 {
+    font-size: 1.8em;
+  }
+
+  .blacklist h3 {
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width: 557px) {
+  .moto {
+    font-size: 1.4em;
+  }
+  .navbar a {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 499px) {
+  .moto {
+    font-size: 1.2em;
+  }
+  .navbar a {
+    font-size: 0.9em;
+    padding-left: 15px;
+  }
+
+  .blacklist h2 {
+    font-size: 1.6em;
+  }
+
+  .blacklist h3 {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 450px) {
+  .navbar a {
+    padding-left: 12px;
+  }
+
+  .blacklist h2 {
+    font-size: 1.4em;
+  }
+
+  .blacklist h3 {
+    font-size: 1em;
+  }
+
+  .blacklist ul {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .navbar a {
+    font-size: 0.8em;
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 430px) {
+  .moto {
+    font-size: 1em;
+  }
+  .navbar a {
+    font-size: 0.8em;
+  }
+
+  .blacklist h2 {
+    font-size: 1.2em;
+  }
+
+  .blacklist h3 {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 401px) {
+  .moto {
+    font-size: 0.9em;
+  }
+
+  .navbar a {
+    font-size: 0.7em;
+    padding-left: 5px;
+  }
+
+  .blacklist h3 {
+    font-size: 0.8em;
+  }
+
+  .blacklist ul {
+    font-size: 0.7rem;
+  }
+}
