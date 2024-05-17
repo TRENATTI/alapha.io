@@ -13,10 +13,6 @@ import (
 	"github.com/joho/godotenv"
 )
 
-type BannedUser struct {
-	UserID int `json:"userId"`
-}
-
 type BannedGroup struct {
 	GroupID int `json:"groupId"`
 }
