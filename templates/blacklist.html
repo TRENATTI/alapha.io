@@ -8,7 +8,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
     <link rel="stylesheet" href="/static/css/style.css" />
-    <link rel="icon" href="/static/assets/bluewolf.ico" />
+    <link rel="icon" href="/static/assets/whitewolf.ico" />
     <title>Blacklist</title>
   </head>
   <body>
@@ -23,10 +23,9 @@
 
     <section class="main">
       <div class="blacklist">
-      <div>
         <h2>Blacklist</h2>
         <h3>List of blacklisted groups and their IDs</h3>
-
+      <div class="container">
         <ul>
           {{ range $key, $value := . }}
           <li>{{ $key }}: {{ $value.GroupID }}</li>
