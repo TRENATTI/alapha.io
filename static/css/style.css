@@ -15,7 +15,6 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-
 }
 
 :root {
@@ -220,6 +219,27 @@ section h2 span {
   text-align: left;
   font-size: 1.1em;
   padding: 3px;
+}
+
+@media (max-width: 840px) {
+  .logo {
+    display: none;
+    margin: 20px;
+  }
+
+  .main {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+
+@media (max-width: 740px) {
+  .logo {
+    visibility: hidden;
+  }
 }
 
 @media (max-width: 763px) {
