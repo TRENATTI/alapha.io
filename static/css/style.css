@@ -21,7 +21,7 @@ body {
   --primary-color: rgb(36, 160, 197);
   --secondary-color: rgb(52, 175, 212);
   --light-color: #f3f3f3;
-  --darker-color: #dbdbdb;
+  --darker-color: #e0e0e0;
 }
 
 ::selection {
@@ -37,6 +37,7 @@ body {
 img::selection {
   background: #00000000;
 }
+
 img::-moz-selection {
   background: #00000000;
 }
@@ -184,6 +185,9 @@ section h2 span {
 /* Blacklist Styles */
 .blacklist {
   background: rgba(0, 40, 42, 0.178);
+  -webkit-box-shadow: 0px 0px 11px 4px rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: 0px 0px 11px 4px rgba(0, 0, 0, 0.14);
+  box-shadow: 0px 0px 11px 4px rgba(0, 0, 0, 0.14);
   border-radius: 20px;
   padding: 40px;
   color: var(--light-color);
@@ -254,6 +258,7 @@ section h2 span {
   .moto {
     font-size: 1.4em;
   }
+
   .navbar a {
     font-size: 0.9em;
   }
@@ -311,6 +316,7 @@ section h2 span {
   .moto {
     font-size: 1em;
   }
+
   .navbar a {
     font-size: 0.8em;
   }
