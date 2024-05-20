@@ -80,7 +80,7 @@ section {
   padding: 50px 20px;
 }
 
-section h2 span {
+.color-span {
   color: var(--secondary-color);
 }
 
