@@ -22,6 +22,22 @@ body {
   --secondary-color: rgb(52, 175, 212);
   --light-color: #f3f3f3;
   --darker-color: #e0e0e0;
+  color-scheme: dark;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #313131;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #313131;
+  position: fixed;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1d1d1d;
 }
 
 ::selection {
