@@ -19,6 +19,7 @@ type BannedGroup struct {
 
 func main() {
 	opt := option.WithCredentialsFile("./config/creds.json")
+
 	app, err := firebase.NewApp(context.Background(), nil, opt)
 	if err != nil {
 		log.Fatalf("Error initializing app: %v\n", err)
