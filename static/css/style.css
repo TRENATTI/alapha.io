@@ -25,13 +25,11 @@ body {
 }
 
 ::selection {
-  background: rgb(124, 200, 223);
-  /* color: black; */
+  background: var(--primary-color);
 }
 
 ::-moz-selection {
   background: var(--primary-color);
-  color: black;
 }
 
 img::selection {
