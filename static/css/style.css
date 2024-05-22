@@ -309,6 +309,10 @@ section {
     font-size: 1.4em;
   }
 
+  .blacklist {
+    padding: 30px;
+  }
+  
   .blacklist h3 {
     font-size: 1em;
   }
@@ -337,8 +341,8 @@ section {
   }
 }
 
-@media (max-width: 370px) {
+@media (max-width: 363px) {
   .blacklist {
-    padding: 30px;
+    padding: 20px;
   }
 }
