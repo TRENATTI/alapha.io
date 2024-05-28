@@ -66,6 +66,7 @@ header {
   align-items: center;
   padding: 20px 50px;
   white-space: nowrap;
+  position: fixed;
 }
 
 .moto {
@@ -177,23 +178,30 @@ section {
   font-weight: 800;
 }
 
+/* About Us Styles */
 .about {
   background-color: #222;
 }
 
-.content {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
 .desc {
   text-align: center;
+  color: var(--light-color);
 }
 
-.desc h3 {
-  color: var(--light-color);
+.about-div {
+  display: flex;
+  align-items: center;
+  padding: 3rem 0 5rem 5rem;
+}
+
+.about-div img {
+  border-radius: 20px;
+  width: 250px;
+}
+
+.about-div p {
+  margin-left: 1em;
+  font-size: 1.5em;
 }
 
 /* Blacklist Styles */
