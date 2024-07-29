@@ -84,11 +84,13 @@ header {
   font-size: 1em;
   font-weight: 600;
   margin-left: 30px;
+  padding: 5px;
+  border-radius: 5px;
   transition: 0.2s ease-in;
 }
 
 .navbar a:hover {
-  color: rgb(216, 215, 215);
+  background-color: rgba(0, 29, 31, 0.425);
 }
 
 section {
