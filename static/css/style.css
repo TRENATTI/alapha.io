@@ -1,7 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
-
 * {
-  font-family: "Ubuntu", monospace;
+  font-family: monospace;
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -74,14 +72,14 @@ header {
   color: var(--light-color);
   text-overflow: uppercase;
   font-weight: 700;
-  font-size: 1.8em;
+  font-size: 2.1em;
   text-transform: uppercase;
 }
 
 .navbar a {
   color: var(--light-color);
   text-decoration: none;
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: 600;
   margin-left: 30px;
   padding: 5px;
@@ -111,20 +109,20 @@ section {
 }
 
 .logo {
-  width: 18rem;
+  width: 22rem;
   margin-left: 150px;
 }
 
 .main h2 {
   color: var(--light-color);
-  font-size: 3em;
+  font-size: 3.8em;
   font-weight: 700;
   text-align: left;
 }
 
 .main h3 {
   color: var(--darker-color);
-  font-size: 2em;
+  font-size: 2.5em;
   font-weight: 500;
   text-align: left;
 }
@@ -203,7 +201,7 @@ section {
 
 .about-div p {
   margin-left: 1em;
-  font-size: 1.5em;
+  font-size: 1.7em;
 }
 
 /* Blacklist Styles */
@@ -215,7 +213,7 @@ section {
   border-radius: 20px;
   padding: 40px;
   color: var(--light-color);
-  font-weight: 600;
+  font-weight: 700;
   text-align: center;
   white-space: nowrap;
 }
@@ -243,7 +241,7 @@ section {
 .blacklist ul li {
   color: var(--light-color);
   text-align: left;
-  font-size: 1.1em;
+  font-size: 1.35em;
   padding: 3px;
 }
 
@@ -294,7 +292,7 @@ section {
 
   .navbar a {
     font-size: 0.9em;
-    padding-left: 15px;
+    margin-left: 15px;
   }
 
   .logo {
@@ -339,7 +337,7 @@ section {
 
   .navbar a {
     font-size: 0.8em;
-    padding-left: 10px;
+    margin-left: 10px;
   }
 
   .blacklist h2 {
