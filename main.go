@@ -6,9 +6,9 @@ import (
 	"net/http"
 	"os"
 	"text/template"
-
-	"encoding/base64"
 	
+	b64 "encoding/base64"
+
 	firebase "firebase.google.com/go"
 	"google.golang.org/api/option"
 
