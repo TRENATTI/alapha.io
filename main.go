@@ -7,6 +7,8 @@ import (
 	"os"
 	"text/template"
 	
+	"encoding/json"
+
 	b64 "encoding/base64"
 
 	firebase "firebase.google.com/go"
@@ -20,9 +22,11 @@ type BannedGroup struct {
 
 func main() {
 
-	sdk, _ := b64.StdEncoding.DecodeString(os.Getenv("FIREBASE_SDK"))
+	sdk, _ := os.Getenv("FIREBASE_SDK")
 	log.Println(sdk)
-	opt := option.WithCredentialsJSON(sdk)
+	sdkJson, _ := json.Marshal(sdk)
+	log.Println(sdkJson)
+	opt := option.WithCredentialsJSON(sdkJson)
 
 	app, err := firebase.NewApp(context.Background(), nil, opt)
 	if err != nil {
