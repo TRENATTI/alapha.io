@@ -6,8 +6,6 @@ import (
 	"net/http"
 	"os"
 	"text/template"
-	
-	"encoding/json"
 
 	firebase "firebase.google.com/go"
 	"google.golang.org/api/option"
