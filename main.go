@@ -17,7 +17,9 @@ type BannedGroup struct {
 }
 
 func main() {
-	opt := option.WithCredentialsFile("./config/creds.json")
+
+	sdk, _ := b64.StdEncoding.DecodeString(os.Getenv("FIREBASE_SDK"))
+	opt := option.WithCredentialsJSON(sdk)
 
 	app, err := firebase.NewApp(context.Background(), nil, opt)
 	if err != nil {
