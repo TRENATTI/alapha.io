@@ -10,7 +10,6 @@ import (
 	firebase "firebase.google.com/go"
 	"google.golang.org/api/option"
 
-	"github.com/joho/godotenv"
 )
 
 type BannedGroup struct {
