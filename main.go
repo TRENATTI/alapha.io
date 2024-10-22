@@ -69,10 +69,5 @@ func main() {
 }
 
 func getEnv(key string) string {
-	err := godotenv.Load("./config/.env")
-	if err != nil {
-		log.Fatalf("Error loading .env file")
-	}
-
 	return os.Getenv(key)
 }
