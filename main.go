@@ -22,9 +22,7 @@ func main() {
 
 	sdk := os.Getenv("FIREBASE_SDK")
 	log.Println(sdk)
-	sdkJson, _ := json.Marshal(sdk)
-	log.Println(sdkJson)
-	opt := option.WithCredentialsJSON(sdkJson)
+	opt := option.WithCredentialsJSON([]byte(sdk))
 
 	app, err := firebase.NewApp(context.Background(), nil, opt)
 	if err != nil {
