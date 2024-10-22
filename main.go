@@ -21,7 +21,7 @@ type BannedGroup struct {
 func main() {
 
 	sdk, _ := b64.StdEncoding.DecodeString(os.Getenv("FIREBASE_SDK"))
-	log.Println(sdk, _)
+	log.Println(sdk)
 	opt := option.WithCredentialsJSON(sdk)
 
 	app, err := firebase.NewApp(context.Background(), nil, opt)
