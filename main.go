@@ -10,6 +10,7 @@ import (
 	firebase "firebase.google.com/go"
 	"google.golang.org/api/option"
 
+	"github.com/joho/godotenv"
 )
 
 type BannedGroup struct {
@@ -17,10 +18,7 @@ type BannedGroup struct {
 }
 
 func main() {
-
-	sdk := os.Getenv("FIREBASE_SDK")
-	log.Println(sdk)
-	opt := option.WithCredentialsJSON([]byte(sdk))
+	opt := option.WithCredentialsFile("./config/creds.json")
 
 	app, err := firebase.NewApp(context.Background(), nil, opt)
 	if err != nil {
@@ -33,7 +31,7 @@ func main() {
 	}
 
 	homeHandler := func(w http.ResponseWriter, r *http.Request) {
-		tmpl, err := template.ParseFiles("./index.html")
+		tmpl, err := template.ParseFiles("./templates/index.html")
 
 		if err != nil {
 			log.Printf("Error parsing HTML template: %v", err)
@@ -71,5 +69,10 @@ func main() {
 }
 
 func getEnv(key string) string {
+	err := godotenv.Load("./config/.env")
+	if err != nil {
+		log.Fatalf("Error loading .env file")
+	}
+
 	return os.Getenv(key)
 }
